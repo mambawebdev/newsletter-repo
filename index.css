@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: rgb(255,255,255);
+  --Pink: rgb(247, 37, 219);
+  --Coral-Pink: hsl(350, 58%, 60%);
+  --Orange: hsl(29, 92%, 49%);
+  --trans3s: .3s all ease;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--Dark-Slate-Grey);
+}
+
+.container{
+  display: flex;
+  background-color: var(--White);
+  border-radius: 30px;
+  transform: scale(1);
+  transition: 0.7s;
+}
+
+.modal-success{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  opacity: 0%;
+  transition: 0.7s;
+}
+
+.modal-success .modal-cntr{
+  padding: 40px;
+  width: 450px;
+  height: 500px;
+  background-color: var(--White);
+  border-radius: 30px;
+}
+
+.modal-success .modal-cntr img{
+  margin-bottom: 30px;
+  transform: scale(90%);
+}
+
+.modal-success .modal-cntr  h1{
+  font-size: 3rem;
+  line-height: 50px;
+  color: var(--Charcoal-Grey-);
+  margin-bottom: 25px;;
+}
+
+.modal-success .modal-cntr  p{
+  margin-bottom: 35px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--Grey);
+  line-height: 25px;
+}
+
+.modal-success .modal-cntr  .emphasis{
+  font-weight: 900;
+  color: var(--Charcoal-Grey)
+}
+
+
+.modal-success .modal-cntr .modal-btn{
+  width: 100%;
+  height: 65px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: var(--Charcoal-Grey);
+  color: var(--White);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}.modal-success .modal-cntr .modal-btn:hover{
+  background-image: linear-gradient(to top right, var(--Coral-Pink), var(--Orange));
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}.modal-success .modal-cntr .modal-btn:active{
+  transform: translateY(-3%)
+}
+
+.container .right-side {
+  padding: 20px 20px 20px 100px;
+}
+
+.container .left-side{
+  padding: 25px 20px 20px 60px;
+}
+
+.container .left-side h1{
+  font-size: 50px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.container .left-side .desc{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container .left-side .list,
+.container .left-side .list1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.container .left-side .list1{
+  margin-top: 25px;
+}
+
+.container .left-side .list img,
+.container .left-side .list1 img{
+  margin-right: 15px;
+}
+
+.container .left-side .list p,
+.container .left-side .list1 p{
+  font-size: 16px;
+}
+
+
+.container .left-side .parag-cntr{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.container .left-side .email,
+.container .left-side .error{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.container .left-side .error{
+  color: var(--Tomato);
+  transition: .3s;
+  opacity: 0;
+  border-bottom: 2px dotted var(--Tomato);
+}
+
+.container .left-side input{
+  width: 100%;
+  height: 65px;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid var(--Dark-Slate-Grey);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.container .left-side input:focus{
+  border: 2px solid var(--Dark-Slate-Grey);
+}
+
+.container .left-side button{
+  margin-top: 30px;
+  width: 100%;
+  height: 65px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: var(--Charcoal-Grey);
+  color: var(--White);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--trans3s);
+}.container .left-side button:hover{
+  background-image: linear-gradient(to top right, var(--Coral-Pink), var(--Orange));
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}.container .left-side button:active{
+  transform: translateY(-3%)
+}
+
+
+
+
+
+
+
+/* 
+
+## Colors
+
+### Primary
+
+- Tomato: hsl(4, 100%, 67%)
+
+### Neutral
+
+- Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%);
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
+- Weights: 400, 700
+
+ */
